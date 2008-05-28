@@ -28,6 +28,7 @@
 		32CA4F630368D1EE00C91783 /* Deskweb_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deskweb_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Deskweb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskweb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC47014E0DEDE10D00912025 /* WebView+SecretExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+SecretExtensions.h"; sourceTree = "<group>"; };
 		FC83305E0DEDA62B009BCE27 /* DesktopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopWindow.h; sourceTree = "<group>"; };
 		FC83305F0DEDA62B009BCE27 /* DesktopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopWindow.m; sourceTree = "<group>"; };
 		FC83306C0DEDA8E2009BCE27 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
@@ -59,6 +60,7 @@
 				FC8330770DEDACC3009BCE27 /* DesktopWebView.m */,
 				FC83309F0DEDADC3009BCE27 /* Deskbar_AppDelegate.h */,
 				FC8330A00DEDADC4009BCE27 /* Deskbar_AppDelegate.m */,
+				FC47014E0DEDE10D00912025 /* WebView+SecretExtensions.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -256,7 +258,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.4;
 			};
 			name = Debug;
 		};
@@ -269,7 +271,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.4;
 			};
 			name = Release;
 		};
