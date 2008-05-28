@@ -22,6 +22,10 @@
 	<string>1.0</string>
 	<key>DWHomePage</key>
 	<string>http://google.com</string>
+	<key>DWPosition</key>
+	<string>100,50</string>
+	<key>DWSize</key>
+	<string>640x480</string>
 	<key>LSUIElement</key>
 	<integer>1</integer>
 	<key>NSMainNibFile</key>
