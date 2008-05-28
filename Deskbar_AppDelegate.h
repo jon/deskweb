@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
+#import "WebView+SecretExtensions.h"
 
 @interface Deskbar_AppDelegate : NSObject {
 	IBOutlet NSWindow *mainWindow;

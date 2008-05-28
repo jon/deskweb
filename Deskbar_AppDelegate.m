@@ -8,14 +8,21 @@
 
 #import "Deskbar_AppDelegate.h"
 
+extern char **environ;
 
 @implementation Deskbar_AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	NSString *content = @"<html><head><style>body { color: white; background-color: transparent; }</style></head><body><h1>Hello World</h1></body></html>";
-	
 	[webView setDrawsBackground:NO];
-	[[webView mainFrame] loadHTMLString:content baseURL:[NSURL URLWithString:@"file:///"]];
+	
+	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+	NSString *deskWebHome = [infoDictionary objectForKey:@"DWHomePage"];
+	if (!deskWebHome) {
+		NSLog(@"DWHomePage not set in Info.plist. Please set this to a string and try again");
+		exit(1);
+	}
+		
+	[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:deskWebHome]]];
 }
 
 @end
