@@ -20,11 +20,13 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>DWHomePage</key>
+	<string>http://google.com</string>
+	<key>LSUIElement</key>
+	<integer>1</integer>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>DWHomePage</key>
-	<string>http://google.com</string>
 </dict>
 </plist>
