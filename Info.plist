@@ -21,7 +21,7 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>DWHomePage</key>
-	<string>http://google.com</string>
+	<string>file:///Users/jon/Desktop/quickreserve/index.html</string>
 	<key>DWPosition</key>
 	<string>100,50</string>
 	<key>DWSize</key>

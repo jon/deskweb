@@ -8,6 +8,12 @@
 
 #import "DesktopWindow.h"
 
+@interface NSWindow (CanBecomeVisibleWithoutLogin)
+
+- (void)setCanBecomeVisibleWithoutLogin:(BOOL)canBecomeVisible;
+- (BOOL)canBecomeVisibleWithoutLogin;
+
+@end
 
 @implementation DesktopWindow
 
@@ -28,7 +34,9 @@
     [result setOpaque:NO];
     //and while we're at it, make sure the window has a shadow, which will automatically be the shape of our custom content.
     [result setHasShadow: NO];
-	[result setCanBecomeVisibleWithoutLogin:YES];
+	
+	if ([result respondsToSelector:@selector(setCanBecomeVisibleWithoutLogin:)])
+		[result setCanBecomeVisibleWithoutLogin:YES];
 	
     return result;
 }
